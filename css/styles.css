@@ -4180,7 +4180,7 @@ textarea.form-control-lg {
   background-color: var(--bs-card-bg);
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius);
+  border-radius: 10px;
 }
 .card > hr {
   margin-right: 0;
@@ -11559,12 +11559,12 @@ html {
   height: 100%;
 }
 
-.bg-gradient-primary-to-secondary {
+.bg-gradient-primary-to-secondario {
   background: #1e30f3;
   background: linear-gradient(135deg, #1e30f3 0%, #00aaff 100%);
 }
 
-.text-gradient {
+.text-gradiente {
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #00aaff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -11,7 +11,7 @@ include("includes/head.php");
         <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">APKs</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradiente d-inline">APKs</span></h1>
                 </div>
                 <!-- ========== Start Section ==========
                     Colocar aqui implementação para ler links de apk do banco de dados
@@ -47,7 +47,7 @@ include("includes/head.php");
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <section class="py-5 bg-gradient-primary-to-secondario text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>

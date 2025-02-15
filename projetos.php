@@ -53,7 +53,7 @@ include("includes/head.php");
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <section class="py-5 bg-gradient-primary-to-secondario text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Vamos criar algo juntos!</h2>
