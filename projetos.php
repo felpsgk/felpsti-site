@@ -10,7 +10,7 @@ include("includes/head.php");
         <!-- Projects Section-->
         <section class="py-5">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5 mx-auto"> <!-- Centralização e limite de largura -->
+                <div class="col-md-9 col-lg-8 mx-auto"> <!-- Centralização e limite de largura -->
                     <div class="card card-geral-black mb-3 border-0">
                         <div class="row g-0 align-items-center">
                             <div class="col-7 d-flex flex-column align-items-center justify-content-center text-center">
@@ -30,7 +30,7 @@ include("includes/head.php");
             </div>
 
             <div class="row justify-content-center mt-4">
-                <div class="col-md-6 col-lg-5 mx-auto"> <!-- Mesmo ajuste para o segundo card -->
+                <div class="col-md-9 col-lg-8 mx-auto"> <!-- Mesmo ajuste para o segundo card -->
                     <div class="card card-geral-black mb-3 border-0">
                         <div class="row g-0 align-items-center">
                             <div class="col-7 d-flex flex-column align-items-center justify-content-center text-center">
@@ -57,6 +57,7 @@ include("includes/head.php");
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Vamos criar algo juntos!</h2>
                     <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+                    target="_blank"
                         href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!">Whatsapp <i
                             class="fa-brands fa-whatsapp"></i></a>
                 </div>

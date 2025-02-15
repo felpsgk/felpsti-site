@@ -4171,6 +4171,8 @@ textarea.form-control-lg {
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
+  --bs-card-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: var(--bs-card-box-shadow);
   position: relative;
   display: flex;
   flex-direction: column;
