@@ -4,7 +4,7 @@
 <main>
   <section class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Tutoriais em Vídeo</h2>
+      <h2 class="text-center mb-4">Tutoriais em Vídeos</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
           <div class="ratio ratio-16x9">
