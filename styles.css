@@ -1,0 +1,63 @@
+/* Custom Color Palette */
+:root {
+    --primary-color: #190ca8;
+    --secondary-color: #000000;
+  }
+  
+  /* Body and Typography */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+  }
+  footer {
+    margin-top: auto;
+    background-color: var(--secondary-color);
+  }
+  /* Navbar */
+  .navbar {
+    background-color: var(--secondary-color) !important;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Hero Section */
+  header {
+    background-color: var(--primary-color);
+    padding: 100px 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+  }
+  
+  /* Cards */
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Animations */
+  .animate__animated {
+    animation-duration: 1s;
+  }
