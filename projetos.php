@@ -16,39 +16,47 @@ include("includes/head.php");
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">leomartins.psi</h2>
-                                        <p>Site para psicologo</p>
+                        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">leomartins.psi</h2>
+                                            <p>Site para psicologo</p>
+                                        </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/site1.png" alt="..." />
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid img-limited" src="assets/site1.png" alt="..." />
                         </div>
                         <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
+                        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
                             <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Yuri Personal</h2>
-                                        <p>Site para personal trainer</p>
+                                <div class="card overflow-hidden shadow rounded-4 border-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Yuri Personal</h2>
+                                            <p>Site para personal trainer</p>
+                                        </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/site2.png" alt="..." />
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid img-limited" src="assets/site2.png" alt="..." />
+                        </div>
                     </div>
-                </div>
-            </div>
         </section>
         <!-- Call to action section-->
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Vamos criar algo juntos!</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!">Whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+                        href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!">Whatsapp <i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </section>

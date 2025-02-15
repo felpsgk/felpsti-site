@@ -586,7 +586,12 @@ progress {
 .blockquote > :last-child {
   margin-bottom: 0;
 }
-
+.img-limited {
+  width: 100%; /* Faz a imagem ocupar toda a largura do container */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Evita espaçamentos extras */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+}
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
@@ -598,8 +603,8 @@ progress {
 }
 
 .img-fluid {
+  height: 450px;
   max-width: 100%;
-  height: auto;
 }
 
 .img-thumbnail {
