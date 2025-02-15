@@ -6,8 +6,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link" href="index.php">Início</a></li>
-                        <li class="nav-item" id="userLogado"><a class="nav-link" href="resumo.php">Apks</a></li>
                         <li class="nav-item"><a class="nav-link" href="projetos.php">Projetos</a></li>
+                        <li class="nav-item" id="userLogado"><a class="nav-link" href="resumo.php">Sobre Mim</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contato</a></li>
                     </ul>
                 </div>
