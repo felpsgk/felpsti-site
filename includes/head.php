@@ -16,5 +16,5 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/e76c95d2f5.js" crossorigin="anonymous"></script>        
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/styles.css" rel="stylesheet" />
     </head>
