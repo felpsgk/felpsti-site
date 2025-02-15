@@ -20,10 +20,10 @@ include("includes/head.php");
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 1</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <h2 class="fw-bolder">leomartins.psi</h2>
+                                        <p>Site para psicologo</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <img class="img-fluid" src="assets/site1.png" alt="..." />
                                 </div>
                             </div>
                         </div>
@@ -32,10 +32,10 @@ include("includes/head.php");
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 2</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <h2 class="fw-bolder">Yuri Personal</h2>
+                                        <p>Site para personal trainer</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <img class="img-fluid" src="assets/site2.png" alt="..." />
                                 </div>
                             </div>
                         </div>
