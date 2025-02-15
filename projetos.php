@@ -9,45 +9,48 @@ include("includes/head.php");
         ?>
         <!-- Projects Section-->
         <section class="py-5">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
-                        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">leomartins.psi</h2>
-                                            <p>Site para psicologo</p>
-                                        </div>
-                                    </div>
+            <div class="row justify-content-center">
+                <div class="col position-relative">
+                    <div class="card card-geral-black mb-3 border-0">
+                        <div class="row g-0 align-items-center">
+                            <div
+                                class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="card-body">
+                                    <h3 class="card-title">leomartins.psi</h3>
+                                    <p class="card-text">
+                                        Site para psicólogo
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-fluid img-limited" src="assets/site1.png" alt="..." />
-                        </div>
-                        <!-- Project Card 2-->
-                        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
-                            <div class="card-body p-0">
-                                <div class="card overflow-hidden shadow rounded-4 border-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Yuri Personal</h2>
-                                            <p>Site para personal trainer</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-4">
+                                <img src="assets/site1.png" alt="site psicologo" class="card-img img-limited" />
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="img-fluid img-limited" src="assets/site2.png" alt="..." />
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4"> <!-- Adicionada margem entre os cards -->
+                <div class="col position-relative">
+                    <div class="card card-geral-black mb-3 border-0">
+                        <div class="row g-0 align-items-center">
+                            <div
+                                class="col-md-8 d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="card-body">
+                                    <h3 class="card-title">Yuri Personal</h3>
+                                    <!-- Alterado para um segundo projeto -->
+                                    <p class="card-text">
+                                        Site para personal trainer
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/site2.png" alt="site academia personal trainer"
+                                    class="card-img img-limited" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Call to action section-->
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
