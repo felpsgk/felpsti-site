@@ -7,7 +7,6 @@ include("includes/head.php");
         <?php
         include("includes/navbar.php");
         ?>
-
         <!-- Projects Section-->
         <section class="py-5">
             <div class="row justify-content-center">
@@ -16,14 +15,14 @@ include("includes/head.php");
                         <div class="row g-0 align-items-center">
                             <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="card-body">
-                                    <h2 class="fw-bolder">Score! Hero MOD</h2>
-                                    <p>Score! Hero com MOD</p>
+                                    <h2 class="card-title">Score! Hero MOD</h2>
+                                    <p class="card-text">Score! Hero com MOD</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <a href="https://drive.google.com/file/d/1qnekSPIfYBMt8YjtKC224XQQkWOQ8WKp/view?usp=drive_link"
                                     target="_blank">
-                                    <img class="img-fluid" src="assets/apksImg/scorehero.png" alt="..." />
+                                    <img class="card-img img-limited" src="assets/apksImg/scorehero.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -37,14 +36,14 @@ include("includes/head.php");
                         <div class="row g-0 align-items-center">
                             <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="card-body">
-                                    <h2 class="fw-bolder">BitLife BR MOD</h2>
-                                    <p>Bit life brasil com mod</p>
+                                    <h2 class="card-title">BitLife BR MOD</h2>
+                                    <p class="card-text">Bit life brasil com mod</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <a href="https://drive.google.com/file/d/1DwTBNdzuea1SzGB5a1wfAF4Cl2MMMT89/view?usp=drive_link"
                                     target="_blank">
-                                    <img class="img-fluid" src="assets/apksImg/bitlife.png" alt="..." />
+                                    <img class="card-img img-limited" src="assets/apksImg/bitlife.png" alt="..." />
                                 </a>
                             </div>
                         </div>
