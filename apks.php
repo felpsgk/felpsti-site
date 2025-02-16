@@ -11,16 +11,16 @@ include("includes/head.php");
         <!-- Projects Section-->
         <section class="py-5">
             <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8 mx-auto"> <!-- Centralização e limite de largura -->
+                <div class="col-md-11 col-lg-10 mx-auto"> <!-- Centralização e limite de largura -->
                     <div class="card card-geral-black mb-3 border-0">
                         <div class="row g-0 align-items-center">
-                            <div class="col-7 d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="card-body">
                                     <h2 class="fw-bolder">Score! Hero MOD</h2>
                                     <p>Score! Hero com MOD</p>
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-6">
                                 <a href="https://drive.google.com/file/d/1qnekSPIfYBMt8YjtKC224XQQkWOQ8WKp/view?usp=drive_link"
                                     target="_blank">
                                     <img class="img-fluid" src="assets/apksImg/scorehero.png" alt="..." />
@@ -32,16 +32,16 @@ include("includes/head.php");
             </div>
 
             <div class="row justify-content-center mt-4">
-                <div class="col-md-9 col-lg-8 mx-auto"> <!-- Mesmo ajuste para o segundo card -->
+                <div class="col-md-11 col-lg-10 mx-auto"> <!-- Mesmo ajuste para o segundo card -->
                     <div class="card card-geral-black mb-3 border-0">
                         <div class="row g-0 align-items-center">
-                            <div class="col-7 d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="card-body">
                                     <h2 class="fw-bolder">BitLife BR MOD</h2>
                                     <p>Bit life brasil com mod</p>
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-6">
                                 <a href="https://drive.google.com/file/d/1DwTBNdzuea1SzGB5a1wfAF4Cl2MMMT89/view?usp=drive_link"
                                     target="_blank">
                                     <img class="img-fluid" src="assets/apksImg/bitlife.png" alt="..." />
