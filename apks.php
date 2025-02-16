@@ -57,7 +57,7 @@ include("includes/head.php");
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Precisa de algum app?</h2>
                     <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" target="_blank"
-                        href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!">Fale comigo! <i
+                        href="https://wa.me/5531982136559?text=Oi%2C%20quero%20um%20app%20especifico!">Fale comigo! <i
                             class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
