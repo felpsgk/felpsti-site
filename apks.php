@@ -55,8 +55,10 @@ include("includes/head.php");
         <section class="py-5 bg-gradient-primary-to-secondario text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                    <h2 class="display-4 fw-bolder mb-4">Precisa de algum app?</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" target="_blank"
+                        href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!">Fale comigo! <i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </section>
