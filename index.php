@@ -41,14 +41,14 @@ include("includes/head.php");
             <div class="container px-2">
                 <div class="row gx-2 justify-content-center">
                     <div class="col-xxl-8">
-                        <div class="text-center my-2">
+                        <div class="text-center my-5">
                             <h2 class="display-5 fw-bolder">
                                 <a class="text-gradiente d-inline" href="resumo.php">Sobre mim</a>
                             </h2>
                             <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradiente" href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!"><i class="bi bi-whatsapp"></i></a>
-                                <a class="text-gradiente" href="https://www.linkedin.com/in/felipe-p-machado/"><i class="bi bi-linkedin"></i></a>
-                                <a class="text-gradiente" href="https://github.com/felpsgk"><i class="bi bi-github"></i></a>
+                                <a class="text-gradiente" target="_blank" href="https://wa.me/5531982136559?text=Oi%2C%20quero%20criar%20um%20projeto!"><i class="bi bi-whatsapp"></i></a>
+                                <a class="text-gradiente" target="_blank" href="https://www.linkedin.com/in/felipe-p-machado/"><i class="bi bi-linkedin"></i></a>
+                                <a class="text-gradiente" target="_blank" href="https://github.com/felpsgk"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
