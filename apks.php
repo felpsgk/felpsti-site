@@ -23,10 +23,13 @@ include("includes/head.php");
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 1</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <h2 class="fw-bolder">BitLife BR MOD</h2>
+                                        <p>Bit life brasil com mod</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <a href="https://drive.google.com/file/d/1DwTBNdzuea1SzGB5a1wfAF4Cl2MMMT89/view?usp=drive_link"
+                                        target="_blank">
+                                        <img class="img-fluid" src="assets/apksImg/bitlife.png" alt="..." />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -35,10 +38,13 @@ include("includes/head.php");
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 2</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <h2 class="fw-bolder">Score! Hero MOD</h2>
+                                        <p>Score! Hero com MOD</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    <a href="https://drive.google.com/file/d/1qnekSPIfYBMt8YjtKC224XQQkWOQ8WKp/view?usp=drive_link"
+                                        target="_blank">
+                                        <img class="img-fluid" src="assets/apksImg/scorehero.png" alt="..." />
+                                    </a>
                                 </div>
                             </div>
                         </div>
