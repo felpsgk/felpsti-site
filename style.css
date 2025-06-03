@@ -1,0 +1,552 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Preto/Cinza bem escuro para o fundo principal */
+    color: #E0E0E0; /* Cinza claro para o texto principal */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1A1A1A; /* Um tom de cinza escuro, ligeiramente diferente do body */
+    padding: 15px 0;
+    border-bottom: 1px solid #333333; /* Cinza escuro para a borda */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    color: #FFFFFF; /* Branco para o logo, para bom contraste */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #B0B0B0; /* Cinza médio para links da navegação */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #FF8C00; /* Laranja para hover e link ativo */
+}
+
+/* Seção Hero */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    color: #A0A0A0; /* Cinza um pouco mais claro para "Olá." */
+    font-weight: normal;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    color: #FFFFFF; /* Branco para o nome */
+    margin: 10px 0;
+}
+
+.hero-text p { /* Profissão */
+    font-size: 1.5em;
+    color: #FF8C00; /* Laranja para a profissão */
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #FF8C00; /* Laranja */
+    color: #FFFFFF; /* Texto branco no botão laranja */
+    border: 1px solid #FF8C00; /* Borda laranja */
+}
+
+.btn-primary:hover {
+    background-color: #E07B00; /* Laranja um pouco mais escuro no hover */
+    border-color: #E07B00;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #FF8C00; /* Texto laranja */
+    border: 1px solid #FF8C00; /* Borda laranja */
+}
+
+.btn-secondary:hover {
+    background-color: #FF8C00; /* Fundo laranja no hover */
+    color: #FFFFFF; /* Texto branco no hover */
+}
+
+.hero-image { /* Este é o item flex que contém a foto */
+    flex-basis: 300px; /* Espaço disponível para a foto e seus efeitos */
+    display: flex; /* Usado para centralizar o container da foto, se necessário */
+    justify-content: center;
+    align-items: center;
+    /* Remova o text-align: center; se existia aqui */
+}
+
+.profile-picture-container {
+    width: 180px;  /* Largura da sua foto (ajuste conforme necessário) */
+    height: 180px; /* Altura da sua foto (igual à largura para um círculo perfeito) */
+    position: relative; /* Essencial para posicionar as bordas ::before e ::after */
+    margin: auto; /* Centraliza o container da foto dentro do .hero-image */
+}
+
+.profile-picture-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;    /* Faz a imagem ficar redonda */
+    object-fit: cover;     /* Garante que a imagem cubra a área sem distorcer */
+    display: block;        /* Remove espaços extras abaixo da imagem */
+    border: 3px solid #2c2c2c; /* Opcional: uma pequena borda sólida interna se desejar */
+                               /* Se não quiser, remova esta linha 'border' */
+}
+
+/* Estilos para as bordas rotativas "picotadas" */
+.profile-picture-container::before,
+.profile-picture-container::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    /* MUDANÇA AQUI: de dotted para dashed */
+    border-style: dashed;    /* Ou mantenha dotted e apenas aumente o border-width abaixo */
+    border-color: #FF8C00;
+}
+
+/* Primeira borda rotativa (mais interna) */
+.profile-picture-container::before {
+    /* Mantemos esta como está ou com o valor que você definiu */
+    width: calc(100% + 20px); /* A 10px da borda da imagem em cada lado */
+    height: calc(100% + 20px);
+    border-width: 6px;
+    border-style: dashed;
+    border-color: #FF8C00;
+    animation: rotate-clockwise 25s linear infinite;
+}
+
+/* Segunda borda rotativa (mais externa) */
+.profile-picture-container::after {
+    /* MUDANÇA AQUI: Aumente o valor para afastar mais esta borda */
+    width: calc(100% + 60px); /* Exemplo: A 30px da borda da imagem em cada lado */
+    height: calc(100% + 60px);
+    border-width: 7px;
+    border-style: dashed;
+    border-color: #FF8C00;
+    animation: rotate-counter-clockwise 20s linear infinite;
+}
+
+
+/* Barra de Habilidades */
+/* Seção Skills Bar - (sem alteração aqui, apenas para contexto) */
+.skills-bar {
+    background-color: #1A1A1A;
+    padding: 20px 0;
+}
+
+.skills-scroll-wrapper {
+    /* Defina a largura da área centralizada onde o scroll com fade vai acontecer */
+    max-width: 900px; /* Ex: 900px. Ajuste conforme o design da sua página */
+    margin: 0 auto;   /* Centraliza o wrapper na tela */
+    overflow: hidden; /* Continua essencial para o scroll funcionar */
+    position: relative; /* Boa prática, embora não estritamente necessário para mask-image sozinho */
+
+    /* A MÁSCARA PARA O EFEITO DE FADE NAS BORDAS */
+    -webkit-mask-image: linear-gradient(
+        to right, /* Gradiente da esquerda para a direita */
+        transparent 0%,      /* Começa totalmente transparente na esquerda */
+        black 15%,           /* Transição para totalmente opaco (visível) em 15% da largura */
+        black 85%,           /* Permanece totalmente opaco até 85% da largura */
+        transparent 100%     /* Transição para totalmente transparente na direita */
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}
+
+/* Estilos para ul.skills-list-animated e li (permanecem os mesmos da solução anterior) */
+ul.skills-list-animated {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    gap: 20px;
+    animation: scroll-horizontal 25s linear infinite; /* A velocidade que você definiu */
+}
+
+ul.skills-list-animated li {
+    /* Seus estilos existentes: */
+    color: #A0A0A0;
+    font-size: 0.9em;
+    padding: 8px 15px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    background-color: #282828;
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    /* NOVOS ESTILOS para alinhar o ícone com o texto: */
+    display: flex;          /* Ativa o Flexbox para o <li> */
+    align-items: center;    /* Alinha verticalmente o ícone e o texto */
+    gap: 8px;               /* Cria um espaço de 8px entre o ícone e o texto (moderno) */
+                            /* Se precisar de suporte a navegadores mais antigos, remova 'gap' */
+                            /* e adicione 'margin-right: 8px;' ao estilo da imagem abaixo. */
+}
+
+/* Estilo para as imagens dos ícones dentro dos <li> */
+ul.skills-list-animated li img {
+    width: 20px;  /* Largura desejada para o ícone */
+    height: 20px; /* Altura desejada para o ícone (pode ser 'auto' se quiser manter a proporção) */
+    /* Se não usou 'gap' no <li>, adicione margem aqui: */
+    /* margin-right: 8px; */
+    /* object-fit: contain; Opcional: para garantir que a imagem caiba sem distorcer, se as dimensões não forem quadradas */
+}
+/* Animação @keyframes scroll-horizontal (permanece a mesma) */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Opcional: Pausar a animação ao passar
+
+.skills-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-bar ul li {
+    color: #A0A0A0; /* Cinza médio para o texto das skills */
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border: 1px solid #444444; /* Borda cinza */
+    border-radius: 4px;
+    background-color: #282828; /* Fundo cinza escuro para cada skill */
+}
+
+/* Seção Sobre Mim e Serviços */
+.about-services {
+    padding: 50px 0;
+}
+
+.about-services-content {
+    display: flex;
+    gap: 50px;
+}
+
+.services-list {
+    flex-basis: 35%;
+}
+
+.services-list h3 {
+    font-size: 1.5em;
+    color: #FFFFFF; /* Branco para o título "O que eu faço" */
+    margin-bottom: 20px;
+}
+
+.service-item {
+    background-color: #1E1E1E; /* Cinza escuro para o card de serviço */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #FF8C00; /* Detalhe lateral laranja */
+}
+
+.service-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    /* Para SVGs, você pode controlar a cor via CSS se o SVG permitir (fill: #FF8C00;) */
+}
+
+.service-item h4 {
+    font-size: 1.2em;
+    color: #FF8C00; /* Laranja para o título do serviço */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.95em;
+    color: #B0B0B0; /* Cinza claro para a descrição do serviço */
+}
+
+.about-me {
+    flex: 1;
+}
+
+.about-me h2 {
+    font-size: 2.2em;
+    color: #FFFFFF; /* Branco para "Sobre Mim" */
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+    color: #B0B0B0; /* Cinza claro para o texto */
+}
+
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-item h3 { /* Números das estatísticas */
+    font-size: 2.5em;
+    color: #FF8C00; /* Laranja para os números */
+}
+
+.stat-item p { /* Descrição das estatísticas */
+    font-size: 0.9em;
+    color: #A0A0A0; /* Cinza médio */
+}
+
+
+/* Seção Projetos */
+.projects-section {
+    padding: 50px 0;
+    background-color: #1A1A1A; /* Fundo da seção de projetos (mesmo do header) */
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #FFFFFF; /* Branco */
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: #282828; /* Cinza escuro para o card do projeto */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #333333; /* Borda cinza escura */
+}
+
+.project-card h3 {
+    color: #FF8C00; /* Laranja para o título do projeto */
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #B0B0B0; /* Cinza claro para a descrição do projeto */
+}
+
+.project-card p strong { /* Para "Tecnologias usadas:" */
+    color: #D0D0D0; /* Um pouco mais claro */
+}
+
+
+/* Seção Contato */
+/* Estilos para a seção de contato */
+.contact-section {
+    padding: 60px 0; /* Aumentei um pouco o padding */
+    text-align: center;
+    background-color: #121212; /* Mantendo o fundo escuro principal */
+}
+
+.contact-section h2 {
+    font-size: 2.2em;
+    color: #FFFFFF;
+    margin-bottom: 25px; /* Ajustei a margem */
+}
+
+.contact-section p { /* Estilo para o parágrafo introdutório */
+    color: #B0B0B0;
+    margin-bottom: 35px; /* Aumentei a margem para dar espaço aos ícones */
+    line-height: 1.7;
+    max-width: 600px; /* Para o texto não ficar muito largo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    gap: 30px; /* Espaço entre os ícones (ajuste conforme necessário) */
+    margin-bottom: 35px; /* Espaço abaixo dos ícones */
+}
+
+.social-links a {
+    display: inline-block; /* Para que a transformação funcione bem */
+    transition: transform 0.3s ease-out; /* Transição suave para o hover */
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+.social-links img {
+    width: 40px;  /* Tamanho dos ícones, ajuste conforme o design */
+    height: 40px; /* Mantém quadrado, ou use 'auto' para altura se não forem */
+    /* Se seus ícones não forem brancos/transparentes e precisarem de ajuste para o tema escuro: */
+    /* filter: brightness(0) invert(1); // Exemplo para transformar um ícone preto em branco */
+}
+
+/* Estilo para o parágrafo do e-mail e o link de e-mail */
+.contact-section .contact-email-text {
+    font-size: 1em;
+    color: #B0B0B0;
+    margin-top: 0; /* Remove margem superior se os ícones já deram espaço */
+}
+
+.contact-section .email-link {
+    color: #FF8C00; /* Laranja da paleta do site */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-section .email-link:hover {
+    color: #E07B00; /* Laranja um pouco mais escuro no hover */
+    text-decoration: underline;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1A1A1A; /* Mesmo cinza escuro do header e seção de projetos */
+    border-top: 1px solid #333333; /* Borda cinza escura */
+    font-size: 0.9em;
+    color: #A0A0A0; /* Cinza médio para o texto do rodapé */
+}
+    .about-me p a {
+        color: #FF8C00;             /* Laranja da paleta do site */
+        font-weight: bold;          /* Texto em negrito */
+        text-decoration: none;      /* Remove o sublinhado padrão */
+        transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave para o hover */
+    }
+
+    /* Efeito ao passar o mouse sobre esses links */
+    .about-me p a:hover {
+        color: #E07B00;             /* Laranja um pouco mais escuro no hover (o mesmo do hover dos botões) */
+        text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para indicar que é clicável */
+    }
+/* (Opcional) Media Queries para responsividade básica - SEM MUDANÇAS DE COR AQUI */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .about-services-content {
+        flex-direction: column;
+    }
+
+    .services-list, .about-me {
+        flex-basis: 100%;
+    }
+
+    .stats {
+        justify-content: space-around;
+    }
+}
+/* Keyframes para rotação */
+@keyframes rotate-clockwise {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotate-counter-clockwise {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
