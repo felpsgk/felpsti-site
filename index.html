@@ -14,6 +14,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
@@ -40,22 +41,32 @@
       <div class="skills-scroll-wrapper">
         <ul class="skills-list-animated">
           <li><img src="icons/java.png" alt="Ícone Java" /> Java</li>
-          <li><img src="icons/selenium.png" alt="Ícone Java" /> Selenium</li>
-          <li><img src="icons/cucumber.png" alt="Ícone Java" /> Cucumber</li>
           <li>
-            <img src="icons/serenity.png" alt="Ícone Java" /> Serenity BDD
+            <img src="icons/selenium.png" alt="Ícone Selenium" /> Selenium
           </li>
-          <li><img src="icons/python.png" alt="Ícone Java" /> Python</li>
-          <li><img src="icons/github.png" alt="Ícone Java" /> Git</li>
-          <!-- ----------- -->
+          <li>
+            <img src="icons/cucumber.png" alt="Ícone Cucumber" /> Cucumber
+          </li>
+          <li>
+            <img src="icons/serenity.png" alt="Ícone Serenity BDD" /> Serenity
+            BDD
+          </li>
+          <li><img src="icons/python.png" alt="Ícone Python" /> Python</li>
+          <li><img src="icons/github.png" alt="Ícone Git" /> Git</li>
+          <!--  -->
           <li><img src="icons/java.png" alt="Ícone Java" /> Java</li>
-          <li><img src="icons/selenium.png" alt="Ícone Java" /> Selenium</li>
-          <li><img src="icons/cucumber.png" alt="Ícone Java" /> Cucumber</li>
           <li>
-            <img src="icons/serenity.png" alt="Ícone Java" /> Serenity BDD
+            <img src="icons/selenium.png" alt="Ícone Selenium" /> Selenium
           </li>
-          <li><img src="icons/python.png" alt="Ícone Java" /> Python</li>
-          <li><img src="icons/github.png" alt="Ícone Java" /> Git</li>
+          <li>
+            <img src="icons/cucumber.png" alt="Ícone Cucumber" /> Cucumber
+          </li>
+          <li>
+            <img src="icons/serenity.png" alt="Ícone Serenity BDD" /> Serenity
+            BDD
+          </li>
+          <li><img src="icons/python.png" alt="Ícone Python" /> Python</li>
+          <li><img src="icons/github.png" alt="Ícone Git" /> Git</li>
         </ul>
       </div>
     </section>
@@ -128,6 +139,194 @@
         </div>
       </div>
     </section>
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Projetos</h2>
+
+        <div class="project-card">
+          <h3>Validador de Cenários Gherkin (gherkin_validator)</h3>
+          <p>
+            Desenvolvi uma ferramenta em Python para validar e padronizar
+            automaticamente cenários de teste escritos em Gherkin (arquivos
+            <code>.feature</code>). O <code>gherkin_validator</code> utiliza a
+            biblioteca <code>gherkin-official</code> para analisar a estrutura
+            dos cenários, identificar erros comuns na ordem das palavras-chave
+            (Given, When, Then), problemas na estrutura de exemplos e outros
+            desvios de padronização.
+          </p>
+          <p>
+            A ferramenta gera relatórios detalhados em formatos
+            <code>.docx</code> e <code>.xlsx</code>, apontando os erros
+            encontrados e facilitando a correção. Além disso, produz um
+            relatório de cobertura de automação baseado em tags
+            (<code>@automatizado</code>, <code>@automatizar</code>,
+            <code>@manual</code>), oferecendo uma visão clara do status dos
+            testes.
+          </p>
+          <h4>Principais Benefícios e Funcionalidades:</h4>
+          <ul>
+            <li>Acelera a revisão manual de cenários de teste.</li>
+            <li>
+              Previne que cenários mal formatados quebrem a esteira de CI/CD.
+            </li>
+            <li>Auxilia na padronização da escrita de testes BDD.</li>
+            <li>Melhora a rastreabilidade e a auditoria dos cenários.</li>
+          </ul>
+          <p>
+            <strong>Tecnologias utilizadas:</strong> Python, gherkin-official,
+            python-docx, openpyxl, pandas, argparse.
+          </p>
+          <p>
+            <a
+              href="https://github.com/felpsgk/gherkin_validator"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver projeto no GitHub
+              <img
+                src="icons/github.png"
+                alt="GitHub"
+                style="
+                  width: 16px;
+                  height: 16px;
+                  vertical-align: middle;
+                  margin-left: 5px;
+                "
+              />
+            </a>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Automação de Testes com Playwright e Python</h3>
+          <p>
+            Este projeto representa uma iniciativa de estudos e exploração da
+            biblioteca Playwright em conjunto com Python para automação de
+            testes web. O foco foi em aprender e aplicar os recursos do
+            Playwright para interagir com navegadores modernos, manipular
+            elementos da página e executar ações de teste de forma eficiente.
+          </p>
+          <p>
+            Embora seja um projeto inicial de aprendizado, ele demonstra a
+            capacidade de configurar um ambiente de automação com essas
+            tecnologias, escrever scripts de teste básicos e explorar as
+            funcionalidades oferecidas pelo Playwright para diferentes cenários
+            de teste em aplicações web.
+          </p>
+          <h4>Principais Aprendizados e Foco:</h4>
+          <ul>
+            <li>Configuração e utilização do Playwright com Python.</li>
+            <li>
+              Interação com elementos web (seletores, cliques, preenchimento de
+              formulários).
+            </li>
+            <li>
+              Exploração das capacidades de automação cross-browser do
+              Playwright.
+            </li>
+            <li>
+              Fundamentos da escrita de testes automatizados para aplicações
+              web.
+            </li>
+          </ul>
+          <p><strong>Tecnologias utilizadas:</strong> Python, Playwright.</p>
+          <p>
+            <a
+              href="https://github.com/felpsgk/automation_playwright_python"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver projeto no GitHub
+              <img
+                src="icons/github.png"
+                alt="GitHub"
+              />
+            </a>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Aplicativo para Gestão de Horas e Tarefas (PlanilhaHoras)</h3>
+          <p>
+            Desenvolvi este aplicativo como uma solução pessoal para otimizar o
+            registro e a gestão das minhas horas de trabalho e tarefas diárias.
+            Utilizando Dart (provavelmente com Flutter para o front-end) e PHP
+            para o backend, o objetivo foi criar uma ferramenta prática e
+            eficiente para organizar e contabilizar o tempo dedicado a cada
+            atividade, facilitando o acompanhamento e a geração de relatórios.
+          </p>
+          <p>
+            Este projeto demonstra a aplicação de desenvolvimento mobile e
+            backend para resolver uma necessidade cotidiana, focando na
+            usabilidade e na automação de um processo manual.
+          </p>
+          <h4>Principais Características e Foco:</h4>
+          <ul>
+            <li>Registro de tarefas e tempo dedicado.</li>
+            <li>Organização pessoal e aumento da produtividade.</li>
+            <li>Desenvolvimento de interface mobile intuitiva.</li>
+            <li>
+              Criação de um backend para armazenamento e gestão dos dados.
+            </li>
+          </ul>
+          <p><strong>Tecnologias utilizadas:</strong> Dart (Flutter), PHP.</p>
+          <p>
+            <a
+              href="https://github.com/felpsgk/planilhaHoras"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver projeto no GitHub
+              <img src="icons/github.png" alt="GitHub" />
+            </a>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Aplicativo para Gestão de Confeitaria (Sunshine Cakes)</h3>
+          <p>
+            Iniciei o desenvolvimento de um aplicativo em Flutter (Dart) com o
+            objetivo de auxiliar na gestão do negócio de confeitaria da minha
+            esposa, a 'Sunshine Cakes'. A ideia é criar uma ferramenta que
+            possa, futuramente, facilitar processos como controle de pedidos,
+            catálogo de produtos, gestão de receitas e clientes ou outras necessidades
+            específicas do dia a dia da confeitaria.
+          </p>
+          <p>
+            Este projeto reflete meu interesse em aplicar minhas habilidades de
+            desenvolvimento para criar soluções práticas e personalizadas, 
+            explorando o potencial do Flutter para interfaces amigáveis e funcionais.
+          </p>
+          <h4>Objetivos e Foco Atual:</h4>
+          <ul>
+            <li>Estruturação inicial de um aplicativo Flutter.</li>
+            <li>
+              Exploração de funcionalidades para gestão de pequenos negócios.
+            </li>
+            <li>
+              Precificação de receitas e controle/histórico de valores de ingredientes/produtos.
+            </li>
+            <li>
+              Aprendizado contínuo no desenvolvimento de aplicações mobile com
+              Dart e Flutter.
+            </li>
+          </ul>
+          <p><strong>Tecnologias utilizadas:</strong> Dart, Flutter.</p>
+          <p>
+            <a
+              href="https://github.com/felpsgk/sunshine_cakes"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver projeto no GitHub
+              <img src="icons/github.png" alt="GitHub" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact-section">
       <div class="container">
         <h2>Contato</h2>
@@ -168,8 +367,8 @@
     <footer>
       <div class="container">
         <p>
-          &copy; <span id="currentYear"></span> Felipe Machado. Todos os direitos
-          reservados.
+          &copy; <span id="currentYear"></span> Felipe Machado. Todos os
+          direitos reservados.
         </p>
         <small
           ><a href="https://www.flaticon.com/free-icons/java" title="java icons"
